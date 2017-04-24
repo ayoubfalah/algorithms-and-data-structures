@@ -6,7 +6,7 @@ using std::cin;
 using std::cout;
 using std::swap;
 
-int FindMaxIndex(vector<int> numbers, int to){
+int FindMaxIndex(vector<int> &numbers, int to){
     int n = numbers.size();
     int maxIndex = 0;
     for(int i = 1; i < to; i++)
@@ -33,7 +33,7 @@ int main()
   vector<int> numbers(n);
   for(int i = 0; i < n; i++) cin>>numbers[i];
   long long result = MaxPairwiseProduct(numbers);
-  std::cout<<result << "\n";
+  cout<<result << "\n";
   return 0;
 }
 
